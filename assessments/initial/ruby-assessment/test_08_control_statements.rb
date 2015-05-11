@@ -54,7 +54,7 @@ class AboutControlStatements < Test::Unit::TestCase
       result = result * i
       i += 1
     end
-    assert_equal __, result
+    assert_equal 3628801, result
   end
 
   def test_break_statement
@@ -85,7 +85,7 @@ class AboutControlStatements < Test::Unit::TestCase
     for item in array
       result << item.upcase
     end
-    assert_equal [__, __, __], result
+    assert_equal [HSIF, DNA, SPIHC], result
   end
 
   def test_times_statement
@@ -93,7 +93,7 @@ class AboutControlStatements < Test::Unit::TestCase
     10.times do
       sum += 1
     end
-    assert_equal __, sum
+    assert_equal 11, sum
   end
 
 end

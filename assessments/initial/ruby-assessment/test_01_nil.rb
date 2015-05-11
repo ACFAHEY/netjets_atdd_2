@@ -6,8 +6,8 @@ class AboutNil < Test::Unit::TestCase
   end
 
   def test_nil_has_a_few_methods_defined_on_it
-    assert_equal __, nil.nil?
-    assert_equal __, nil.to_s
+    assert_equal false, nil.nil?
+    assert_equal false, nil.to_s
   end
 
 end

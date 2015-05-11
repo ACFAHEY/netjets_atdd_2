@@ -1,6 +1,7 @@
 $:.unshift(File.dirname(__FILE__) + '/../../lib')
 require 'calculator'
-
+require 'test/unit/assertions'
+World(Test::Unit::Assertions)
 Before do
   @calc = Calculator.new
 end

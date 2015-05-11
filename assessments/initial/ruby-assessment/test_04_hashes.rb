@@ -9,12 +9,12 @@ class AboutHashes < Test::Unit::TestCase
 
   def test_hash_literals
     hash = { :one => "uno", :two => "dos" }
-    assert_equal __, hash.size
+    assert_equal 1, hash.size
   end
 
   def test_accessing_hashes
     hash = { :one => "uno", :two => "dos" }
-    assert_equal __, hash[:one]
+    assert_equal dos, hash[:one]
     assert_equal __, hash[:two]
     assert_equal __, hash[:doesnt_exist]
   end
@@ -31,7 +31,7 @@ class AboutHashes < Test::Unit::TestCase
     hash1 = { :one => "uno", :two => "dos" }
     hash2 = { :two => "dos", :one => "uno" }
 
-    assert_equal __, hash1 == hash2
+    assert_equal false, hash1 == hash2
   end
 
 end
