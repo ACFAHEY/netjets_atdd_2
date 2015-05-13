@@ -16,6 +16,7 @@ module SouthwestInteractions
     on (SouthwestHome) do |page|
       page.departure_airport = departure
       page.arrival_airport = arrival
+      page.search
     end
     [departure, arrival]
   end
