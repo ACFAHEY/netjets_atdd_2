@@ -1,7 +1,7 @@
 require 'page-object'
 
-class SouthwestHome
- include PageObject
+ class SouthwestHome
+  include PageObject
 
   page_url ('southwest.com')
 
@@ -9,4 +9,4 @@ class SouthwestHome
   text_field(:arrival_airport, :id => 'air-city-arrival')
 
   button(:search, :id => 'jb-booking-form-submit-button')
-end
+ end
