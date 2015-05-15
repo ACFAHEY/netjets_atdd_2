@@ -11,7 +11,9 @@ end
 
 task :compile do
   puts 'compiling'
+
   x = 5/10
+
   puts x
 end
 
