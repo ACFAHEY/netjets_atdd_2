@@ -14,7 +14,7 @@ __: Addition
     And I have entered <input_2> into the calculator
     When I press <button>
     Then the result should be <output> on the screen
-  Outline:
+  Examples:
     | input_1 | input_2 | button | output |
     | 5       | 0       | add    | 5      |
     | 4       | -4      | add    | 0      |
